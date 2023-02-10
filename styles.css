@@ -1,0 +1,460 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*we can add font via html or stylesheet*/
+
+/*@font-face is a css rule which allows you to download 
+a particular font from your server to render 
+a webpage if the user hasn't got that font installed.*/
+
+/*If you're prompted to allow the program to make changes to your computer,
+ and if you trust the source of the font, click Yes.
+Your new fonts will appear in the fonts list in Word.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: .938rem;
+
+  
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*the "." from an list will be removed by using it, here for navigation bar it is used "home contact ...*/
+}
+
+a {
+  text-decoration: none;/*for removing the underline or any style from the navigation bar words*/
+}
+
+img {/*it is used for resizing the images that are used*/
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*===== CLASS CSS ===== */
+.section-title {/*these is for the titles profesional skills and about etc*/
+  position: relative;/*used for the underline under that titles*/
+  font-size: 1.25rem;
+  color: rgb(192, 57, 197);
+  padding: 1cm;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+
+/*===== LAYOUT =====*/
+.bd-grid {/*for the sections grid*/
+  max-width: 1024px;
+  display: grid;/*otherwise all the items in the section will be shown lineby line and not in this format*/
+  margin-left: 1rem;
+  margin-right: 2.5rem;
+}
+
+.l-header {/*for design that small navigation header when the window size is less*/
+  width: 100%;/*o show this header in the rightside of the window*/
+  position: fixed;/*for that navigation bar make active*/
+  top: 0;/*to remove the extra space or margin from the top*/
+  left: 0;
+  z-index: 100;/*Overlapping elements with a larger z-index cover those with a smaller one*/
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  
+}
+
+/*===== NAV =====*/
+.nav {
+  height: 3rem;
+  display: flex;/*The CSS flex property allows you to define how the size of a flex item changes to fit the container space*/
+  justify-content: space-between;/*for the nav in the right position  he CSS justify-content property defines how the browser distributes space between and around content items*/
+  align-items: center;
+  font-weight: 600;
+  
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: 3rem;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color:rgb(156, 72, 177);
+    transition: .5s;
+  }
+}
+
+.nav__item {
+  margin-bottom: 2rem;
+  
+}
+
+.nav__link {
+  position: relative;/*positioned relative to its normal position.*/
+  color:#ffffff;/*for the navigation items in less windowsize*/
+}
+.nav__logo {
+  color: rgb(166, 64, 206);
+  font-size: 1.2rem;
+}
+
+.nav__toggle {/*for that navigation logo color in the less window size*/
+  color: rgb(166, 64, 206);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/*=== Show menu  means for showing the menu bar in less window size ===*/
+.show {
+  right: 0;
+}
+
+/*===== HOME =====*/
+h{
+  font-size: 60px;
+}
+
+.home__title {
+  font-size: 35px;
+  margin-bottom: 2rem;
+  
+}
+
+.home__title-color {
+  color: rgb(121, 206, 240);
+  font-size: 75px;
+  font-family: 'Babylonica', cursive;
+font-family: 'Dancing Script', cursive;
+}
+.home{
+  
+  background: url("mil.jpg") no-repeat center;
+  width:100%;
+  max-width: 2024px;
+  color: #fff;
+  min-height: 200px;
+  background-size: cover;/*for being the cover of the background image*/
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .home__data{
+    padding: 3cm;
+  }
+
+.home__social {
+ 
+  margin-left: 2.6cm;
+  margin-bottom: 3cm;
+}
+
+.home__social-icon {/*for icon itself */
+  font-size: 1cm;
+  color: rgb(220, 188, 250);
+  padding: 20px;
+}
+
+.home__social-icon:hover {
+  color: rgb(192, 57, 197);
+}
+/*BUTTONS*/
+.button {
+  background-color: rgb(220, 188, 250);
+  color: #3f4fe0;
+  padding: .75rem 2.5rem;
+  border-radius: .5rem;
+  font-weight:1000;
+}
+
+.button:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+/* ===== ABOUT =====*/
+.about__container {/*for the whole about section*/
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.about__subtitle {
+  margin-bottom: 1rem;
+}
+
+.about__img {
+  justify-self: center;
+}
+
+.about__img img {
+  width: 2cm;
+  border-radius: 1cm;
+  height:6cm;
+}
+.my{/*for that resume*/
+  
+  background-color: rgb(192, 57, 197);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: 600;
+  border-radius: .5rem;
+  margin: 3.5cm;
+  font-size: larger;
+  width:5cm;
+  
+}
+.my:hover{
+  background-color: rgb(72, 72, 177);
+ 
+  padding: .75rem 2.5rem;
+
+}
+/* ===== SKILLS =====*/
+.skills__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+.skills__subtitle {/*for profesional skills headline*/
+  margin-bottom:  1rem;
+}
+.skills__text {
+  margin-bottom: 2rem;
+  }
+
+.skills__data {/*for that skills boxes*/
+  align-items: center;
+  font-weight:600;
+  padding: .5rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.skills__icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: rgb(154, 78, 175);
+}
+
+.skills__names {
+  display: flex;/*by using it the name of the skills are following the icons in the box*/
+  align-items: center;/*the items means 80% or 70% are in the center*/
+  color:black
+}
+
+.skills__bar {/*for designing the vio;et line which defines the percentage*/
+
+  background-color:rgb(89, 11, 109);
+  height: .25rem;
+  border-radius: .5rem; 
+}
+
+.skills__html {
+  width: 80%;
+}
+
+.skills__css {
+  width: 70%;
+}
+
+.skills__js {
+  width: 55%;
+}
+
+.skills__ux {
+  width: 80%;
+}
+.skills__j {
+  width: 70%;
+}
+.skills__p {
+  width: 60%;
+}
+.skills__img {
+  border-radius: 5cm;
+  
+}
+
+/* ===== education =====*/
+.work__container {
+  row-gap: 2rem;
+  background-color: rgb(255, 255, 255);
+  padding: 1cm;
+  font-family: 'Babylonica', cursive;
+font-family: 'Dancing Script', cursive;
+  font-weight: 700px;
+  text-align: center;
+
+}
+#j{/*for acheivement section*/
+  background-color: rgb(228, 158, 235);
+ 
+}
+.erp{/*for that text of acheivement section*/
+  color:black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+
+.m{/*for acivement section container white background*/
+  background-color: aliceblue;
+  padding: 1cm;
+ 
+}
+.p,.but{/*for achievement section certificate buttons*/
+  font-size: 1.2rem;
+  color:black;
+  border:0px;
+  background-color: rgb(193, 147, 233);
+  padding: 1mm;
+  border-radius: 30%;
+  font-family: 'Babylonica', cursive;
+  font-family: 'Dancing Script', cursive;
+}
+
+.work__img img:hover {
+  transform: scale(1.1);/*used for that zoom of that images*/
+  border-radius: 152cm;
+  }
+  .work__img{
+  color:rgb(57, 75, 236);/*for the color of that text of education*/
+  }
+/* ===== CONTACT =====*/
+.contact__input {
+  width: 100%;
+  font-size: .938rem;
+  font-weight:600;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1.5px solid rgb(220, 188, 250);
+  margin-bottom:2rem;
+}
+
+.contact__button {
+ border: none;/*for not showing the border*/
+font-size: .938rem;
+  cursor: pointer;
+ margin-bottom: 1cm;
+ float: right;/*we shifted the button from l,eft to right*/
+}
+.contact__form {
+  width: 360px;/*for give the container its size*/
+  padding-top: 2rem;
+}
+.contact__container {
+  justify-items: center;/*to get all the element of contact form in center*/
+}
+
+/* ===== FOOTER =====*/
+.footer {
+  background-color: rgb(46, 46, 114);
+  color: #fff;
+  text-align: center;
+  font-weight:600;
+  padding: 2rem 0;
+}
+
+
+.footer__social {
+  margin-bottom:2rem;
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.footer__copy {
+  font-size: .75rem;
+}
+
+/* ===== MEDIA QUERIES=====*/
+
+@media screen and (min-width: 576px) {
+
+  .about__container {
+    grid-template-columns: repeat(2,1fr);/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
+    align-items: center;
+    text-align: initial;
+  }
+ 
+}
+
+@media screen and (min-width: 768px) {/*for the whole original size screen of window*/
+  body {
+    
+    margin: 0;
+  }
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title {
+    margin-bottom: 3rem;
+  }
+  .section-title::after {
+    width: 80px;
+    top: 3rem;
+  }
+  .nav {
+    height: 4.5rem;
+  }
+  .nav__list {
+    display: flex;
+    padding-top: 0;
+  }
+  .nav__item {
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__link {
+    color: rgb(46, 46, 114);
+  }
+  .home {
+    padding: 8rem 0 2rem;
+  }
+  .home__img {
+    width: 400px;
+    bottom: 10%;
+  }
+  .about__container {
+    padding-top: 2rem;
+  }
+  .about__img img {
+    width: 300px;
+  }
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    text-align: initial;
+  }
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home {
+    padding: 10rem 0 2rem;
+  }
+  .home__img {
+    width: 450px;
+  }
+}
