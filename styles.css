@@ -458,3 +458,13 @@ font-size: .938rem;
     width: 450px;
   }
 }
+@media (max-width: 480px) {
+  .home__img{
+    height:10cm;
+  }
+  .about__container {
+    grid-template-columns: repeat(2,1fr);/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
+    align-items: center;
+    text-align: initial;
+  }
+}
