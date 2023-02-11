@@ -469,7 +469,9 @@ font-size: .938rem;
   .skills .skills-content .left .text{
       font-size: 19px;
   }
-  .about__container {
-    padding-top: 2rem;
+   .about__container {
+    grid-template-columns: repeat(2,1fr);/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
+    align-items: center;
+    text-align: initial;
   }
 }
