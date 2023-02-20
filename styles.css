@@ -447,23 +447,11 @@ font-size: .938rem;
 }
 
 @media screen and (min-width: 500px ) and (max-width: 1020px ) {
-body {
-    
-  margin: 0;
-}
-.h1{
-  font-size: 5cm;
-}
 
-.home__data{margin-top: 6.5cm;}
-.home{
-  height:30cm;
-row-gap: 3cm;
-justify-content: center;
-  
-}
-.home__social-icon{font-size: 2cm;}
+
+
 .about__container {
+  
   padding-top: 2rem;
 }
 .about__img img {
@@ -514,11 +502,7 @@ display: block;
 
 }
 
-.home__img {
-  padding: 2cm;
-  width: 400px;
-  bottom: 10%;
-}
+
 .about__container {/*for the whole about section*/
   grid-template-columns: none;/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
     align-items: center;
@@ -552,5 +536,20 @@ display: block;
 cursor: pointer;
     
   }
-
+  .home{
+    display:block;
+    
+    height: 100vh;
+    color: #fff;
+   
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home__social-icon{
+  display: grid;
+  margin-bottom: 2cm;
+  padding: 3cm;
+  font-size: 2cm;}
+  
 }
