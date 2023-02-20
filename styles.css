@@ -450,20 +450,6 @@ font-size: .938rem;
 
 
 
-.about__container {
-  
-  padding-top: 2rem;
-}
-.about__img img {
-  width: 600px;
-  height: 600px;
-}
-
-.home__img {
-  width: 400px;
-  bottom: 10%;
-}
-
 .nav__menu {
   position:relative;
   top: 3rem;
@@ -519,15 +505,7 @@ display: block;
   align-items: center;
   text-align: initial;
 }
-.work__container{ grid-template-columns: none;/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
-  align-items: center;
-  text-align: initial;}
-  .home__title{font-size: 2cm;}
-  #j{
-    grid-template-columns: repeat(2,1fr);/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
-    align-items: center;
-    text-align: initial;
-  }
+
   .nav__list {
     display: block;
     background-color: rgb(166, 64, 206);
