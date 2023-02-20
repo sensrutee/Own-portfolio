@@ -546,10 +546,6 @@ cursor: pointer;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-.home__social-icon{
-  display: grid;
-  margin-bottom: 2cm;
-  padding: 3cm;
-  font-size: 2cm;}
+
   
 }
