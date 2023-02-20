@@ -446,48 +446,101 @@ font-size: .938rem;
   }
 }
 
-
-@media screen and (min-width: 500px ) and (max-width: 1000px ) {
-
+@media screen and (min-width: 500px ) and (max-width: 1020px ) {
 
 
+
+.about__container {
   
-  .nav__menu {
-    position:relative;
-    top: 3rem;
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
+  padding-top: 2rem;
+}
+.about__img img {
+  width: 600px;
+  height: 600px;
+}
+
+.home__img {
+  width: 400px;
+  bottom: 10%;
+}
+
+.nav__menu {
+  position:relative;
+  top: 3rem;
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  
+  transition: .5s;
+}
+
+.nav__item {
+  
+margin-bottom: 2rem;
+
+}
+.show {
+  right: 0;
+}
+
+
+.nav__link {
+position: relative;/*positioned relative to its normal position.*/
+color:#ffffff;/*for the navigation items in less windowsize*/
+}
+.nav__logo {
+color: rgb(166, 64, 206);
+font-size: 2rem;
+}
+
+.nav__toggle {/*for that navigation logo color in the less window size*/
+color: rgb(166, 64, 206);
+font-size: 3rem;
+cursor: pointer;
+display: block;
+
+}
+
+
+.about__container {/*for the whole about section*/
+  grid-template-columns: none;/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
+    align-items: center;
+    text-align: initial;
+  text-align: center;
+
+}
+.about__img {
+  justify-self: center;
+}
+.my{margin-left: 10cm;}
+.skills__container{
+  grid-template-columns: none;/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
+  align-items: center;
+  text-align: initial;
+}
+.work__container{ grid-template-columns: none;/*1fr=600px   (number of column in a grid,size of one column in the grid)*/
+  align-items: center;
+  text-align: initial;}
+  .home__title{font-size: 2cm;}
+ 
+  .nav__list {
+    display: block;
+    background-color: rgb(166, 64, 206);
+    padding:1cm ;
+    font-size: 1.6rem;
+cursor: pointer;
     
-    transition: .5s;
   }
-  
-  .nav__item {
-    
-  margin-bottom: 2rem;
-  
-  }
-  .show {
-    right: 0;
-  }
-  
-  
-  .nav__link {
-  position: relative;/*positioned relative to its normal position.*/
-  color:#ffffff;/*for the navigation items in less windowsize*/
-  }
-  .nav__logo {
-  color: rgb(166, 64, 206);
-  font-size: 2rem;
-  }
-  
-  .nav__toggle {/*for that navigation logo color in the less window size*/
-  color: rgb(166, 64, 206);
-  font-size: 3rem;
-  cursor: pointer;
-  display: block;
-  
-  }
-  
+  .home{
+    display:block;
+   
+    max-height: 500px;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
 }
