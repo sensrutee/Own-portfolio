@@ -536,16 +536,6 @@ display: block;
 cursor: pointer;
     
   }
-  .home{
-    display:block;
-    
-    height: 100vh;
-    color: #fff;
-   
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-}
-
+ 
   
 }
